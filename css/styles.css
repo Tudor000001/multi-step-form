@@ -1,0 +1,348 @@
+.body {
+    margin: 10px;
+    font-family: sans-serif, Ubuntu;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #7c7c74;
+    background-color: #eef5ff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.tab{
+    display:none;
+}
+
+.square {
+    position: absolute;
+    top:130px;
+    left:130px;
+    height: 590px;
+    width: 990px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 100px 0 rgba(0, 0, 0, 0.1), 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.margine{
+    margin:10px;
+}
+
+.stepTitle {
+    position: absolute;
+    font-family: sans-serif, Ubuntu;
+    bottom: 450px;
+    left: 400px;
+    font-size: 30px;
+    color: #05254e;
+}
+
+.stepDesc {
+    position: absolute;
+    font-family: sans-serif, Ubuntu;
+    bottom: 450px;
+    left: 400px;
+    opacity:0.6;
+}
+
+.inputu {
+    position: absolute;
+    border-radius: 10px;
+    border: 1px solid grey;
+    height: 45px;
+    width: 480px;
+    text-indent: 10px;
+    font-weight: bold;
+    color: #05254e;
+    border-color: lightgrey;
+}
+
+.inputu:focus{
+    outline:1px solid mediumpurple;
+}
+
+.inputuText {
+    color: #05254e;
+}
+
+.pozInpuTxt{
+    position:absolute;
+    bottom:400px;
+    left:400px;
+}
+
+.pozInpuTxt1 {
+    position: absolute;
+    bottom: 300px;
+    left: 400px;
+}
+
+.pozInpuTxt2 {
+    position: absolute;
+    bottom: 200px;
+    left: 400px;
+}
+
+.bulina {
+    position: absolute;
+    bottom: 500px;
+    left: 40px;
+    height: 28px;
+    width: 28px;
+    color: white;
+    border-radius: 50%;
+    border: 2px solid #89cff0;
+    background-color: transparent;
+}
+
+.bulinaNr{
+    position:absolute;
+    transform:translate(10px, -8px);
+}
+
+.bulinaText{
+    position:absolute;
+    bottom:505px;
+    left:90px;
+    font-size:12px;
+    color:darkgray;
+}
+
+.bulinaText1{
+    position:absolute;
+    bottom: 480px;
+    left:90px;
+    font-size:15px;
+    font-weight:bold;
+    color:white;
+}
+
+.checkboxu {
+    position: absolute;
+    bottom: 290px;
+    left: 400px;
+    height: 140px;
+    width: 120px;
+    padding: 0.5em 1em;
+    border: 0;
+    border-radius: 0.5em;
+    border:1px solid lightgray;
+    background-color: white;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.checkboxu.pressed{
+    box-shadow:rgba(0,0,0,0.1) 0px 0px inset;
+    border:1px solid mediumpurple;
+}
+
+
+.checkboxu:hover{
+    border:1px solid mediumpurple;
+}
+
+.image{
+    position:absolute;
+    bottom:370px;
+    left:415px;
+}
+
+.textuselect {
+    position: absolute;
+    color: #05254e;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: darkblue;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 16px;
+        width: 16px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+input:checked + .slider {
+    background-color: darkblue;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px ;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+
+
+
+.container {
+    position:absolute;
+    top:27px;
+    left:25px;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    /* Hide the browser's default checkbox */
+    .container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border:1px solid grey;
+    border-radius:5px;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: mediumpurple;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 5px;
+    top: 2px;
+    width: 2px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.squaru{
+    position:absolute;
+    bottom:360px;
+    left:400px;
+    height:70px;
+    width:400px;
+    background-color:white;
+    border:1px solid lightgrey;
+    border-radius:8px;
+}
+
+.continue {
+    position: absolute;
+    left: 800px;
+    bottom: 40px;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    border: 0px solid red;
+    background-color: #05254e;
+    color: white;
+}
+
+.previous {
+    position: absolute;
+    left: 350px;
+    bottom: 40px;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    border: 0px solid red;
+    background-color: transparent;
+    color: grey;
+}
+
+    .previous:hover {
+        color: mediumpurple;
+    }
+
+.lenea{
+    position:absolute;
+    background-color:lightgrey;
+    height:1px;
+    width:450px;
+    left: 400px;
+    bottom: 350px;
+    border:0px solid lightgrey;
+}
+
+.pretAdon{
+    position:absolute;
+    transform:translate(300px, 0px);
+    color: darkslategray;
+}
+
+.titluAdon{
+    color:gray;
+}

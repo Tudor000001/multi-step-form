@@ -1,0 +1,162 @@
+<link rel="stylesheet" href="css/styles.css" />
+<html>
+<body class="body">
+    <div class="square">
+        <img class="margine" src="images/bg-sidebar-desktop.svg" />
+        <form id="reg" method="get">
+            <div>
+                <!--BULINUTZ-->
+                <div>
+                    <div id="bulina1" class="bulina">
+                        <p class="bulinaNr">1</p>
+                    </div>
+                    <p class="bulinaText">Step 1</p>
+                    <p class="bulinaText1">YOUR INFO</p>
+                </div>
+                <div>
+                    <div id="bulina2" class="bulina" style="transform:translate(0px, 70px);">
+                        <p class="bulinaNr">2</p>
+                    </div>
+                    <p class="bulinaText" style="transform:translate(0px, 70px);">Step 2</p>
+                    <p class="bulinaText1" style="transform:translate(0px, 70px);">SELECT PLAN</p>
+                </div>
+                <div>
+                    <div id="bulina3" class="bulina" style="transform:translate(0px, 140px);">
+                        <p class="bulinaNr">3</p>
+                    </div>
+                    <p class="bulinaText" style="transform:translate(0px, 140px);">Step 3</p>
+                    <p class="bulinaText1" style="transform:translate(0px, 140px);">ADD-ONS</p>
+                </div>
+                <div>
+                    <div id="bulina4" class="bulina" style="transform:translate(0px, 210px);">
+                        <p class="bulinaNr">4</p>
+                    </div>
+                    <p class="bulinaText" style="transform:translate(0px, 210px);">Step 4</p>
+                    <p class="bulinaText1" style="transform:translate(0px, 210px);">SUMMARY</p>
+                </div>
+            </div> <!--BULINUTZ-->
+            <div class="tab" id="primu">
+                <!--FIRST-FORM-->
+                <p class="stepTitle">Personal info</p>
+                <p class="stepDesc">Please provide your name, email address, and phone number.</p>
+                <div class="pozInpuTxt">
+                    <p class="inputuText">Name</p>
+                    <p><input class="inputu" type="text" placeholder="e.g. Stephen King" required id="field1"/></p>
+                </div>
+                <div class="pozInpuTxt1">
+                    <p class="inputuText">Email Address</p>
+                    <p><input class="inputu" type="email" placeholder="e.g. stephenking@lorem.com" required id="field2"/></p>
+                </div>
+                <div class="pozInpuTxt2">
+                    <p class="inputuText">Phone Number</p>
+                    <p><input class="inputu" type="tel" placeholder="e.g. +1 234 567 890" required id="field3"/></p>
+                </div>
+            </div> <!--FIRST-FORM-->
+            <div class="tab" id="doilea">
+                <!--SECOND-FORM-->
+                <p class="stepTitle">Select your plan</p>
+                <p class="stepDesc">You have the option of monthly or yearly billing.</p>
+                <div>
+                    <input type="button" id="arcade" class="checkboxu"/>
+                    <img class="image" src="images/icon-arcade.svg" />
+                    <p class="textuselect" style="transform:translate(410px, -350px);">Arcade</p>
+                    <span id="arcadu" style="position:absolute;transform:translate(410px, -322px);">$9/mo</span>
+                    <p id="textugrosu" style="position: absolute; transform: translate(410px, -322px); color: #05254e; display:none">2 months free</p>
+                </div>
+                <div>
+                    <input type="button" id="advanced" class="checkboxu" style="transform:translate(140px, 0px);"/>
+                    <img class="image" style="transform:translate(138px, 0px);" src="images/icon-advanced.svg" />
+                    <p class="textuselect" style="transform:translate(550px, -350px);">Advanced</p>
+                    <span id="advancedu" style="position:absolute;transform:translate(550px, -322px);">$12/mo</span>
+                    <p id="textugrosu1" style="position: absolute; transform: translate(550px, -322px); color: #05254e; display:none">2 months free</p>
+                </div>
+                <div>
+                    <input type="button" id="pro" class="checkboxu" style="transform:translate(280px, 0px);"/>
+                    <img class="image" style="transform:translate(276px, 0px);" src="images/icon-pro.svg" />
+                    <p class="textuselect" style="transform:translate(690px, -350px);">Pro</p>
+                    <span id="prou" style="position:absolute;transform:translate(690px, -322px);">$15/mo</span>
+                    <p id="textugrosu2" style="position: absolute; transform: translate(690px, -322px); color: #05254e; display:none">2 months free</p>
+                </div>
+                <p id="month" style="position: absolute; transform: translate(500px, -257px); color: #05254e;">Monthly</p>
+                <p id="year" style="position:absolute;transform:translate(645px, -257px)">Yearly</p>
+                <label class="switch" style="position:absolute;transform:translate(570px, -245px);">
+                    <input type="checkbox" id="cecu" onchange="toggleText()" />
+                    <span class="slider round"></span>
+                </label>
+            </div> <!--SECOND-FORM-->
+            <div class="tab" id="treilea">
+                <!--THIRD-FORM-->
+                <p class="stepTitle">Pick add-ons</p>
+                <p class="stepDesc">Add-ons help enhance your gaming experience.</p>
+                <div class="squaru" id="squaru">
+                    <label class="container">
+                        <input type="checkbox" id="cecucec" onchange="toggleBox()"/>
+                        <span class="checkmark"></span>
+                    </label>
+                    <p style="position: absolute; transform: translate(60px, -10px); color: #05254e;">Online service</p>
+                    <p style="position:absolute;transform:translate(60px, 10px);">Access to multiplayer games</p>
+                    <p style="position:absolute;transform:translate(330px, 1px);color:mediumpurple;" id="moni">+$1/mo</p>
+                </div>
+                <div class="squaru" id="squaru1" style="transform:translate(0px, 90px);">
+                    <label class="container">
+                        <input type="checkbox" id="cecucec1" onchange="toggleBox()"/>
+                        <span class="checkmark"></span>
+                    </label>
+                    <p style="position: absolute; transform: translate(60px, -10px); color: #05254e;">Larger storage</p>
+                    <p style="position:absolute;transform:translate(60px, 10px);">Extra 1TB of cloud save</p>
+                    <p style="position:absolute;transform:translate(330px, 1px);color:mediumpurple;" id="moni1">+$2/mo</p>
+                </div>
+                <div class="squaru" id="squaru2" style="transform:translate(0px, 180px);">
+                    <label class="container">
+                        <input type="checkbox" id="cecucec2" onchange="toggleBox()"/>
+                        <span class="checkmark"></span>
+                    </label>
+                    <p style="position: absolute; transform: translate(60px, -10px); color: #05254e;">Customizable profile</p>
+                    <p style="position:absolute;transform:translate(60px, 10px);">Custom theme on your profile</p>
+                    <p style="position:absolute;transform:translate(330px, 1px);color:mediumpurple;" id="moni2">+$2/mo</p>
+                </div>
+            </div><!--THIRD-FORM-->
+            <div class="tab" id="patrulea">
+                <!--FOURTH-FORM-->
+                <p class="stepTitle">Finishing up</p>
+                <p class="stepDesc">Double-check everything looks OK before conforming.</p>
+                <p style=" transform: translate(430px, -430px); color: #05254e"><span id="finalTitlu"></span>&nbsp;<span id="finalMoYr">(Monthly)</span></p>
+                <span style="position:absolute; transform: translate(800px, -450px); color: #05254e" id="pretAb"></span>
+                <button type="button" id="change" class="previous" style="transform:translate(60px, -330px); text-decoration:underline;">Change</button>
+                <hr class="lenea" />
+                <div style="position:absolute;transform:translate(400px, -370px);" id="service">
+                    <span class="titluAdon">Online Service</span>
+                    <span class="pretAdon" id="pretAd">+$1/mo</span>
+                </div>
+                <div style="position:absolute;transform:translate(400px, -350px);" id="storage">
+                    <span class="titluAdon">Larger Storage</span>
+                    <span class="pretAdon" id="pretAd1">+$2/mo</span>
+                </div>
+                <div style="position:absolute;transform:translate(400px, -330px);" id="profil">
+                    <span class="titluAdon">Customizable Profile</span>
+                    <span class="pretAdon" style="transform:translate(262px, 0px);" id="pretAd2">+$2/mo</span>
+                </div>
+                <span style="position:absolute; transform:translate(400px, -200px);">Total&nbsp;<span id="perwhat">(per month)</span></span>
+                <span style="position:absolute;transform:translate(800px, -200px); font-size:20px;color:mediumpurple;">+$<span id="totalu"></span><span id="perwhattotal">/mo</span></span>
+                <p style="position:absolute;transform:translate(750px, -160px);color:salmon;display:none" id="subs">Subscription not chosen.</p>
+                <p style="position:absolute;transform:translate(750px, -180px);color:salmon;display:none" id="pers">Personal info not completed.</p>
+            </div><!--FOURTH-FORM-->
+            <div class="tab" id="tank">
+                <img style="position:absolute;transform:translate(600px, -410px);" src="images/icon-thank-you.svg" />
+                <div>
+                    <p style="position: absolute; color: #05254e; font-size: 30px; transform: translate(560px, -350px);">Thank you!</p>
+                    <p style="position:absolute;text-align:center;transform:translate(450px, -270px);">Thanks for confirming your subscription! We hope you have <br /> fun using our platform.If you ever need support, please feel<br /> free to email us at support@loremgaming.com.</p>
+                </div>
+            </div>
+            <div style="overflow:auto;"><!--PREVNEXT-->
+                <div style="float:right;">
+                    <button type="button" class="previous" id="prevBtn" >Go Back</button>
+                    <button type="button" class="continue" id="nextBtn" onclick="toggleBox()">Continue</button>
+                </div>
+            </div>
+            <button type="submit" class="continue" style="display:none" id="conf">Confirm</button>
+        </form>
+    </div>
+    <script src="javascript/script.js"></script>
+</body>
+</html>
